@@ -1,3 +1,36 @@
+# _Program Kalkulasi BMI_
+
+## Keterangan Tugas
+
+Nama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Monika Angelia Panjaitan <br>
+Kelompok &nbsp;&nbsp;&nbsp;&nbsp;: BE 10 <br>
+Mentor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Amilin <br>
+Tugas &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Technical Project Assignment (TPA) #2 - BMI Calculator
+
+---
+
+<br>
+
+_form di index.html_
+
+```html
+<form>
+  <label for="weight">Berat badan (kg)</label>
+  <input type="number" id="weight" class="input" placeholder="Masukkan Berat Badan" required />
+  <div id="weight-error" class="error"></div>
+  <label for="height">Tinggi (cm)</label>
+  <input type="number" id="height" class="input" placeholder="Masukkan Tinggi Badan" required />
+  <div id="height-error" class="error"></div>
+  <button type="button" onclick="calculateBMI()">Hitung BMI</button>
+</form>
+<div class="result" id="result"></div>
+```
+
+<br>
+
+_fungsi **calculateBMI()** di script.js_
+
+```javascript
 function calculateBMI() {
   // mendapatkan nilai inputan user
   const weightInput = document.getElementById("weight");
@@ -37,3 +70,10 @@ function calculateBMI() {
     }
   }
 }
+```
+
+<br><br>
+
+# <b>Preview Aplikasi : </b>
+
+![](assets/img/BMI-calculator-preview.png)
